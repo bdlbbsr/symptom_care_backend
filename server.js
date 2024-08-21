@@ -26,7 +26,7 @@ app.use(compression());
 //   },
 // }));
 
-// app.use(cors());
+app.use(cors());
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', 'https://symptom-care-frontend.vercel.app');
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
